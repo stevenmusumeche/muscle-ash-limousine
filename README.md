@@ -13,6 +13,9 @@ You must also have Node 8.1+ installed.
     # Clone the repo
     git clone https://github.com/stevenmusumeche/muscle-ash-limousine.git
 
+    # Change into project directory
+    cd muscle-ash-limousine
+
     # Install dependencies (only TypeScript and a web server)
     npm install
 
