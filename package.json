@@ -1,0 +1,31 @@
+{
+  "name": "muscle-ash-limousine",
+  "version": "1.0.0",
+  "description": "muscle-ash-limousine",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "prestart": "npm run compile",
+    "start:server": "websocketd --port=8080 node ./backend/server.js",
+    "start:client": "http-server ./frontend -p 8081 -o",
+    "start": "npm run start:server | npm run start:client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenmusumeche/muscle-ash-limousine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenmusumeche/muscle-ash-limousine/issues"
+  },
+  "homepage": "https://github.com/stevenmusumeche/muscle-ash-limousine#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.7.0",
+    "typescript": "^3.0.1"
+  }
+}
